@@ -20,7 +20,7 @@ Ozone es una Wallet que busca brindar una manera fácil de usar nuestras palabra
 ## Donaciones
 
 CHIA:
-xch1a6a5y0fz8phndc70qn0jzmeh2p6tkf5y0qyywgd0k3jw823894mq686r0c
+xch1dewce6eke7tq0svpduazmkvfj30yq2kaclp2s2v0efa5nx9fqz2sgm85kv
 
 TRON-TRC20:
 TMxKPo5AnfSbJY8CZcTJR7L8h4JtEG2pBp
