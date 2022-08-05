@@ -31,7 +31,4 @@ Bitcoin:
 ## Catkchi Token
 
 [Catkchi](https://app.catkchi.com/)
-
-## Agradecimientos
-
-Gracias al equipo de [irulast chia-crypto-utils](https://github.com/irulast/chia-crypto-utils) por el excelente trabajo realizado en la librería chia-crypto-utils , ya que estamos trabajando en un Fork de ese proyecto donde tenemos nuestras propias implementaciones [Marvin Quevedo chia-crypto-utils](https://github.com/MarvinQuevedo/chia-crypto-utils) como lo son: Ofertas de CAT2's, NFT's y muchas mas características.
+ 
