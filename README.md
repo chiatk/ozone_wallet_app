@@ -1,34 +1,31 @@
 # Ozone Wallet App
-
-Ozone es una Wallet que busca brindar una manera fácil de usar nuestras palabras clave en la blockchain de Chia, ha sido desarolllada por [ChiaTK](https://chiatk.com) como parte del Roadmap de nuestro Token Catkchi, y estamos trabajando  arduamente para que Ozone sea una de las wallets mas importantes en la blockchain de Chia, ha sido pensada para ser fácil de usar y trabajar lo más cercano posible a la Wallet de Chia oficial.
-
-## Características
-
-- Manejo de múltiples palabras clave de forma fácil.
-- Sincronización de múltiples direcciones tal y como lo maneja la Wallet Oficial de Chia.
-- Sincronización veloz gracias a usar un servidor centralizado que brinda una forma fácil y rápida de obtener los balances mediante un WebSocket que permite la máxima eficiencia posible
-- Realiza transacciones de XCH y CAT2's.
-
-## Próximas características
-
-- Creación y aceptación de Ofertas de CAT2's y XCH.
-- Integración con los distintos exchanges descentralizados que operan con Ofertas de XCH y CAT2.
-- Sincronización y manejo de NFT's.
-- Manejo de ofertas de NFT's e integración con los diferentes exchanges especializados en NFT's
-- Entre otras muchas funcionalidaes que harán mucho más fácil el uso de CAT2's, NFT's, XCH y demás assets de la Blockchain de Chia.
-
-## Donaciones
-
+ 
+Ozone is a Wallet that seeks to provide an easy way to use our keywords in the Chia blockchain, it has been developed by ChiaTK (https://chiatk.com) as part of the Roadmap of our Catkchi Token, and we are working hard in order to be one of the most important wallets on the Chia blockchain, it has been designed to be easy to use and work as close as possible to the official Chia Wallet.
+ 
+## Characteristic
+ 
+- Manage multiple keywords easily.
+- Synchronization of multiple addresses as handled by the Official Chia Wallet.
+- Fast synchronization thanks to using a centralized server that provides an easy and fast way to obtain the balances through a WebSocket that allows the maximum possible efficiency
+- Make XCH and CAT2's transactions.
+ 
+## Upcoming Features
+ 
+- Create and accept Offers of CAT2's and XCH.
+- Integration with different decentralized exchanges that operate with XCH and CAT2 Offers.
+- Synchronization and management of NFT's.
+- Management of NFT's Offers and integration with the different exchanges specialized in NFT's
+- Among many other features that will make the use of CAT2's, NFT's, XCH and other assets of the Chia Blockchain much easier.
+ 
+## Donations
+ 
 CHIA:
-xch1dewce6eke7tq0svpduazmkvfj30yq2kaclp2s2v0efa5nx9fqz2sgm85kv
-
+xch1u275wfezqqm42y3vtfsu9l2fzspfwvjj9ased2zwzjujgl0zct5sg4c933
+ 
 TRON-TRC20:
 TMxKPo5AnfSbJY8CZcTJR7L8h4JtEG2pBp
-
+ 
 Bitcoin:
 3Qnbej5wkFYHGm1AzBMkfopzENkNipAaLQ
-
-## Catkchi Token
-
-[Catkchi](https://app.catkchi.com/)
  
+## Catkchi Token
