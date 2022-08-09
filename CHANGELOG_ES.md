@@ -9,6 +9,7 @@
 - Ahora ya no se para la sincronización ni generación de wallets al minimizar Ozone, esto para facilitar la generación de direcciones y evitar problemas de rendimiento al regresar a la aplicación, si no desea que Ozone consuma recursos debe cerrarla completamente.
 - Mejoras a la hora de escanear las transacciones activas, ahora solo se escanean cada vez que haya una altura de bloque nueva, esto reduce significativamente el consumo de recursos de la aplicación.
 - Mejoras al calcular en las direcciones para recibir el "cambio", ahora se usará siempre la dirección siguiente a la activa, si no existiera, se usará la anterior, de esta forma, si la wallet activa es la m/12381/8444/2/20 la dirección de cambio será la m/12381/8444/2/21, sino existe, se usará la anterior m/12381/8444/2/19
+- Se ha bloqueado la interfaz para que solo se muestre de forma vertical, ahora si rota el dispositivo Ozone permanecerá vertical para evitar fallos en la interfáz
 
 # 0.6.76+77 HotFix
 
