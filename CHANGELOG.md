@@ -1,117 +1,115 @@
-
-# 0.6.75+76 HotFix
-
-- Corrección a migración CAT2's, en algunos dispositivos no se borraban los tokens CAT1, ahora se realiza un reinicio mas drástico para garantizar que la migración se realice de forma correcta.
-
+# 0.6.75+76 Hotfix
+ 
+- Correction to CAT2's migration, in some devices the CAT1 tokens were not erased, now a more drastic restart is made to guarantee that migration is carried out correctly.
+ 
 # 0.6.75+75
-
-- Migración de los CAT's Versión 2, se ha actualizado el programa de ChiaLisp encargado de realizar las transacciones de este tipo, además, se hicieron cambios en la librería encargada de realizar la transacción con CAT para soportar el nuevo Estándar.
-- Se hicieron mejoras a la pantalla de transparencia de cara a la actualización, por último, se programó un reinicio de la sincronización para crear las nuevas direcciones para sincronizar los CAT's
-- Ahora se muestra la derivación que corresponde en la pantalla de recibir, esto para ser más transparente con la cantidad de derivaciones usadas en ese momento, por ahora son 150 que se aumentarán en versiones posteriores.
-- Se corrigió un bug que impedía que la dirección seleccionada para recibir se mantuviera seleccionada, anteriormente se perdía la configuración, ahora la dirección seleccionada queda guardada permanentemente.
-- Se hicieron mejoras para mejorar la migración de bases de datos antiguas, ahora, si no se tienen derivaciones y no se esta conectado al WebSocket, se mostraran en que estado esta la creación de dichas derivaciones para que el usuario sea consciente que se está realizando un proceso de "resincronización"
-
-# 0.6.73+73
-
-- En actualizaciones anteriores se removió Catkchi como token por defecto con la intención de mejorar el rendimiento en la primera apertura, ahora con el uso de librerías nativas para la derivación de claves, este tiempo ya no es importante y ha sido agregado nuevamente como parte del compromiso y agradecimiento a la comunidad por el apoyo que han brindado.
-- Ahora algunas funciones serán desactivadas si no se detecta una conección a internet, las funciones son: envío de transacciones y  consulta de Staking en Catkchi
-- Soporte universal para bases de datos antiguas, muchos usuarios tuvieron problemas al actualizar Ozone debido a los modelos incompatibles, esto les hacía imposible volver a entrar a la wallet, para ello, ahora se ha creado un mecanismo que reinicia las "cajas" que contienen modelos incompatibles, la única caja que no cambiará su estructura y por lo tanto no se borrara en ningún momento, es la caja "seed" esto significa, que las 24 palabras nunca se perderán. En resumen, si el listado de derivaciones no es compatible, será eliminado y vuelto a crear, de esta forma garantizamos que el usuario pueda seguir actualizando la aplicación sin miedo de perder acceso a sus datos, los datos de sincronización perdidos serán recuperados con los mecanismos que ya se tienen.
-
-# 0.6.71+72
-
-- Se cambio el texto mostrado en el emcabezado de transparencia para ser mas descriptivo.
-
-# 0.6.71+71
-
-- Se corrigieron errores al momento de cambiar de seed.
-- Se cambió el nombre de 'compras' a 'Staking' en la extensión de Catkchi
-- Se agregó la pantalla de transparencia de Catkchi, ahora puedes ver un listado de wallets donde encontrarás los montos en frío, caliente y a quemarse que tenemos en nuestra potestad
-
-- Liberación de recursos al cambiar de seed o cerrar la app, ahora al ser necesario, se puede hacer una liberación de recursos en el servidor para dejar de sincronizar una wallet anterior, esto mejora el rendimiento y evita fallos en la sincronización.
-
-# 0.6.7+70
-
-- Corrección a migración de base de datos desde la versión 55, que es la versión estable publicada en las tiendas, se hicieron ajustes para que no se congele al ingresar la contraseña y encontrar modelos incompatibles.
-
-# 0.6.7+67
-
-- Corrección a la autenticación por huella en Android, en algunos dispositivos la autenticación por huella fallaba, esto se corrigió cambiando el tema usado en el entorno nativo de Android.
-- Se corrigieron algunos problemas de sincronización con WebSocket, ahora el reporte de altura  no se hace por bloques, si 100 dicciones se encuentran en la altura 150, se mandan esas 100 direcciones y se procesan como si fuese una, esto genera una sola actualización de pantalla que mejora el rendimiento.
-- Se corrigió un lag visual en la pantalla de tokens, esto se debía a que por cada token se calculaba el color primario del icono del token, ahora se usa un solo color para todos.
-- Se corrigió un lag visual que existían en la pantalla de transacciones, esto se logró cambiando el bucle que se encarga de procesar las transacciones entrantes, debido a que ahora gracias a la sincronización por WebSocket, solo existe un medio por el que se registran nuevas coins, basta con agregar un listener a nuevas coins y procesarlas por si existen nuevas transacciones.
-
-# 0.6.3+60
-
-- Se corrigieron problemas con lag en la interfaz del usuario, se cambió la forma en que se actualiza la pantalla, se hicieron ajustes para solo actualizar las partes de la pantalla que corresponde y hacer menos actualizaciones de pantalla cuando no es necesario.
-- Se implementó una librería nativa de BLS que permite un mejor rendimiento a la hora de realizar derivaciones, en un futuro puede también usarse para realizar firmas y calcular hashes, pero falta que ver si la diferencia de rendimiento es lo suficientemente importante para hacer estos cambios
-
-# 0.6.1+58
-
-- Se habilitó la autenticación por huella en Android, anteriormente había sido desactivada porque fallaba en algunos dispositivos.
-
+ 
+- Migration of CAT's Version 2, ChiaLisp, the program in charge of carrying out transactions of this type has been updated, in addition, changes were made in the library in charge of carrying out the transaction with CAT to support the new Standard.
+- Improvements were made on the transparency screen facing this update, finally, a synchronization restart was scheduled to create the new addresses to synchronize the CAT's
+- Now the corresponding derivation is shown on the receiving screen, this to be more transparent with the number of derivations used at that moment, for now there are 150 that will be increased in later versions.
+- Fixed a bug that prevented the address selected to receive from being chosen, previously the configuration was lost, now the selected address is saved permanently.
+- Improvements were made to improve the migration of old databases, now, if there are no derivations and it is not connected to the WebSocket, the state of the creation of said derivations will be shown so that the user is aware that it is being done a "resynchronization" process
+ 
+#0.6.73+73
+ 
+- In previous updates, Catkchi was removed as the default token with the intention of improving performance at first opening, now with the use of native libraries for key derivation, this time is no longer important and has been added again as part of the commitment and thanks to the community for the support they have provided.
+- Now some functions will be disabled if an internet connection is not detected, the functions are: Sending transactions and consulting Staking in Catkchi
+- Universal support for old databases, many users had problems updating Ozone due to incompatible models, this made it impossible for them to re-enter the wallet, to fix this, a mechanism has now been created that restarts the "boxes" they contain incompatible models, the only box that will not change its structure and therefore will not be deleted at any time, is the "seed" box, this means that the 24 words will never be lost. In summary, if the referral list is not compatible, it will be deleted and recreated, this way we guarantee that the user can continue updating the application without fear of losing access to their data, the lost synchronization data will be recovered with the mechanisms that they already have.
+ 
+#0.6.71+72
+ 
+- Changed the text displayed in the transparency header to be more descriptive.
+ 
+#0.6.71+71
+ 
+- Fixed errors when changing seed.
+- Changed the name of 'purchases' to 'Staking' in the Catkchi extension
+- The Catkchi transparency screen was added, now you can see a list of wallets where you will find the amounts in cold, hot and to be burned that we have in our power
+ - Release of resources when changing the seed or closing the app, now, when necessary, you can release resources on the server to stop synchronizing a previous wallet, this improves performance and avoids synchronization failures.
+ 
+#0.6.7+70
+ 
+- Correction to database migration from version 55, which is the stable version published in the stores, adjustments were made so that it does not freeze when entering the password and finding incompatible models.
+ 
+#0.6.7+67
+ 
+- Correction to fingerprint authentication on Android, in some devices fingerprint authentication failed, this was corrected by changing the theme used in the native Android environment.
+- Some synchronization problems with WebSocket were corrected, now the height report is not done by blocks, if 100 addresses are at height 150, those 100 addresses are sent and processed as one, this generates a single update of performance-enhancing display.
+- Fixed a visual lag on the tokens screen, this was because for each token the primary color of the token icon was calculated, now a single color is used for all.
+- Fixed a visual lag that existed on the transactions screen, this was achieved by changing the loop that is responsible for processing incoming transactions, because now thanks to WebSocket synchronization, there is only one means by which new ones are registered coins, just add a listener to new coins and process them in case there are new transactions.
+ 
+#0.6.3+60
+ 
+- Fixed issues with lag in the UI, changed the way the screen updates, made adjustments to only update the appropriate parts of the screen, and do fewer screen updates when not needed.
+- Was implemented a native BLS library that allows better performance when making derivations, in the future it can also be used to make signatures and calculate hashes, but it remains to be seen if the performance difference is important enough to make these changes
+ 
+#0.6.1+58
+ 
+- Fingerprint authentication was enabled on Android, previously it had been disabled because it failed on some devices.
+ 
 # 0.6.0+56
-
-- Se agregó una nueva forma de sincronizar la wallet, ahora se hace mediante un WebSocket, esto significa, que la aplicación abre una comunicación con el servidor y simplemente queda a la espera de actualizaciones desde el servidor, si existe un nuevo bloque, se procede a actualizar. Esto es muy importante en el rendimiento, porque la aplicación no realiza continuas peticiones al servidor para sincronizar, sino que envía el paquete de direcciones y solo queda a espera de nuevos cambios.
-
+ 
+- A new way to synchronize the wallet was added, now it is done through a WebSocket, this means that the application opens a communication with the server and simply waits for updates from the server, if there is a new block, it proceeds to update. This is very important in terms of performance, because the application does not make continuous requests to the server to synchronize, but instead sends the packet of addresses and only waits for new changes.
+ 
 # 0.5.55+55
-
-- Se cambio el símbolo "%" por "APY" en la pantalla de Staking
-
+ 
+- Changed the "%" symbol to "APY" on the Staking screen
+ 
 # 0.5.54+54
-
-- Mejora en la sincronización de las wallets, se incrementó el tamaño de direcciones que se envía a sincronización por petición
-
+ 
+- Improved synchronization of the wallets, the size of addresses that is sent to synchronization by request was increased
+ 
 # 0.5.53+53
-
-- Se corrigió el historial de Staking de Catkchi
-
+ 
+- Fixed Catkchi Staking history
+ 
 # 0.5.52+52
-
-- Se agregó la extensión de Catkchi, en esta se puede realizar Staking de Catkchi.
-- Se hicieron mejoras en la sincronización de la wallet.
-
+ 
+- The Catkchi extension was added, here you can make Catkchi Staking.
+- Improvements were made in the synchronization of the wallet.
+ 
 # 0.5.50+50
-
-- Se removió una dirección usada en modo debug
-
+ 
+- Removed an address used in debug mode
+ 
 # 0.5.49+49
-
-- Corrección en sincronización de wallet, ahora, la sincronización se realiza de forma individual, es decir, se tiene una altura de sincronización para cada token en cada derivación
-
+ 
+- Correction in wallet synchronization, now, the synchronization is done individually, that means, there is a synchronization height for each token in each derivation
+ 
 # 0.5.48+48
-
-- Se corrigió la forma en que se sincroniza la wallet debido a que el método anterior daba lugar a fallos
-
-# 0.5.47
-
-- Se corrigió la dirección de quien envía la transacción de tipo CAT's, en la versión anterior no se realizó de forma correcta
-- Se corrigieron los datos mostrados en las transacciones salientes.
-
-# 0.5.45
-
-- Se corrigió la dirección de quien envía una Transacción de CAT's, en versiones anteriores se mostraba un valor erróneo
-
-# 0.5.44
-
-- Mejoras de rendimiento al realizar la sincronización de las direcciones.
-- Corrección de pequeños errores.
-- Se actualizó la versión de la API, para usar una nueva estructura en el servidor.
-- Se actualizó las librerías para mejorar aspectos de rendimiento y organización de código.
-
-# 0.5.43
-
-- Se corrigió un bug que elimina todos los tokens anteriormente seleccionados si se presiona el boton de atras cuando aun no habian cargado el listado de tokens desde el servidor
-
-# 0.5.42
-
-- Se habilitó la posibilidad de autorelleno la contraseña, esto para hacer uso de herramientas de terceros que permiten la gestión de contraseñas
-- Se corrigió el mensaje de confirmación mostrado cuando se establece la contraseña o el pin
-- Se corrigió un bug visual cuando se solicitaba la contraseña.
-
-# 0.5.41
-
-- Primera beta pública compilada en iOS
-
-# 0.5.40
-
-- Primera beta pública
+ 
+- Fixed the way the wallet is synchronized due to the previous method causing failures
+ 
+#0.5.47
+ 
+- The address of the sender of the CAT's type transaction was corrected, in the previous version it was not done correctly
+- Fixed the data displayed in outgoing transactions.
+ 
+#0.5.45
+ 
+- The address of who sends a CAT's Transaction was corrected, in previous versions a mistaken value was shown
+ 
+#0.5.44
+ 
+- Performance improvements when synchronizing addresses.
+- Correction of small errors.
+- Updated the API version, to use a new structure on the server.
+- Updated the libraries to improve aspects of performance and code organization.
+ 
+#0.5.43
+ 
+- Fixed a bug that deletes all previously selected tokens if the back button is pressed when the list of tokens has not yet been loaded from the server
+ 
+#0.5.42
+ 
+- The possibility of auto filling the password was enabled, this to make use of third-party tools that allow password management
+- Fixed confirmation message displayed when password or pin is set
+- Fixed a visual bug when the password was requested.
+ 
+#0.5.41
+ 
+- First public beta compiled on iOS
+ 
+#0.5.40
+ 
+- First public beta
