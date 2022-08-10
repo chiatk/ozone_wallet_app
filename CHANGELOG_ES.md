@@ -1,9 +1,9 @@
 
-# 0.6.78+84 Hotfix
+# 0.6.78+84 Release
 
 - Android release
 
-# 0.6.77+83 Hotfix
+# 0.6.77+83 Release
 
 - iOS release
 
