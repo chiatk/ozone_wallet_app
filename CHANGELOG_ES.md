@@ -1,9 +1,28 @@
 
+# 0.6.78+84 Hotfix
+
+- Android release
+
+# 0.6.77+81 Hotfix
+
+- Se corrigió un problema al abrir un archivo, por causa de un error visual la librería de flutter nativa cerraba la app
+
+# 0.6.77+80 Hotfix
+
+- Traducción de textos.
+- Soporte para "Abrir con" en Androiid
+
+# 0.6.77+79 Hotfix
+
+- Corrección de valores al escanear o pegar una oferta
+
 # 0.6.77+78
 
 - Implementación de ofertas de XCH y Cat´s, ahora podrá crear tus ofertas, compartirlas por cualquier medio y subirlas a los DEX's existentes, al momento está habilitada la subida a Hashgreen y Dexie, próximamente se habilitarán más.
 - Se habilitó un botón para poder pegar las ofertas.
 - Ahora se puede escanear la oferta desde Dexie.
+- Ahora Ozone es una app con la que puedes abrir los archivos .offer en Android, próximamente estará disponible en iOS.
+- Detección automática sobre el estado de las ofertas, si las monedas son gastadas desde otra wallet, la oferta se marcará como cancelada.
 - Mejoras de rendimiento en la interfaz.
 - Mejora de tiempo al agregar cats, ahora se hace de una forma más veloz, pero durante la sincronización de cats es posible que se note cierto lag en la interfaz.
 - Ahora ya no se para la sincronización ni generación de wallets al minimizar Ozone, esto para facilitar la generación de direcciones y evitar problemas de rendimiento al regresar a la aplicación, si no desea que Ozone consuma recursos debe cerrarla completamente.
