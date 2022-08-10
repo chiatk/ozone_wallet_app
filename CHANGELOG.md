@@ -1,3 +1,42 @@
+# 0.6.78+84 Hotfix
+
+- Android release
+
+# 0.6.77+83 Hotfixes
+
+-iOS release
+
+# 0.6.77+81 Hotfix
+
+- Fixed a problem when opening a file, because of a visual error the native flutter library closed the app
+
+# 0.6.77+80 Hotfixes
+
+- Translation of texts.
+- Support for "Open with" in Android
+
+# 0.6.77+79 Hotfixes
+
+- Correction of values when scanning or pasting an offer
+
+# 0.6.77+78
+
+- Implementation of XCH and Cat's offers, now you can create your offers, share them by any means and upload them to existing DEX's, uploading to Hashgreen and Dexie is currently enabled, more will be enabled soon.
+- A button was enabled to be able to paste the offers.
+- Now you can scan the offer from Dexie.
+- Now Ozone is an app with which you can open .offer files on Android, it will soon be available on iOS.
+- Automatic detection of the status of the offers, if the coins are spent from another wallet, the offer will be marked as cancelled.
+- Performance improvements in the interface.
+- Improvement of time when adding cats, now it is done in a faster way, but during the synchronization of cats it is possible to notice some lag in the interface.
+- Now the synchronization or generation of wallets is no longer stopped when minimizing Ozone, this to facilitate the generation of addresses and avoid performance problems when returning to the application, if you do not want Ozone to consume resources, you must close it completely.
+- Improvements when scanning active transactions, now they are only scanned every time there is a new block height, this significantly reduces the application's resource consumption.
+- Improvements when calculating the addresses to receive the "change", now the address following the active one will always be used, if it does not exist, the previous one will be used, in this way, if the active wallet is m/12381/8444/ 2/20 the change address will be m/12381/8444/2/21, if it does not exist, the previous m/12381/8444/2/19 will be used
+- The interface has been locked so that it only shows vertically, now if you rotate the Ozone device it will remain vertical to avoid interface crashes
+
+# 0.6.76+77 HotFix
+
+- First release of offers with CAT's and XCH, now you can create, accept and send offers to the different DEX configured
+
 # 0.6.75+76 Hotfix
  
 - Correction to CAT2's migration, in some devices the CAT1 tokens were not erased, now a more drastic restart is made to guarantee that migration is carried out correctly.
