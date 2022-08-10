@@ -3,6 +3,10 @@
 
 - Android release
 
+# 0.6.77+83 Hotfix
+
+- iOS release
+
 # 0.6.77+81 Hotfix
 
 - Se corrigió un problema al abrir un archivo, por causa de un error visual la librería de flutter nativa cerraba la app
