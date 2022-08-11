@@ -138,7 +138,7 @@
 - Fixed confirmation message displayed when password or pin is set
 - Fixed a visual bug when the password was requested.
  
-#0.5.41
+# 0.5.41
  
 - First public beta compiled on iOS
  
