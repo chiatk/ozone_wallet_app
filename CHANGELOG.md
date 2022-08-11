@@ -4,7 +4,7 @@
 
 # 0.6.77+83 Release
 
--iOS release
+- iOS release
 
 # 0.6.77+81 Hotfix
 
