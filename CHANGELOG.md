@@ -42,40 +42,40 @@
 - Fixed a bug that prevented the address selected to receive from being chosen, previously the configuration was lost, now the selected address is saved permanently.
 - Improvements were made to improve the migration of old databases, now, if there are no derivations and it is not connected to the WebSocket, the state of the creation of said derivations will be shown so that the user is aware that it is being done a "resynchronization" process
  
-#0.6.73+73
+# 0.6.73+73
  
 - In previous updates, Catkchi was removed as the default token with the intention of improving performance at first opening, now with the use of native libraries for key derivation, this time is no longer important and has been added again as part of the commitment and thanks to the community for the support they have provided.
 - Now some functions will be disabled if an internet connection is not detected, the functions are: Sending transactions and consulting Staking in Catkchi
 - Universal support for old databases, many users had problems updating Ozone due to incompatible models, this made it impossible for them to re-enter the wallet, to fix this, a mechanism has now been created that restarts the "boxes" they contain incompatible models, the only box that will not change its structure and therefore will not be deleted at any time, is the "seed" box, this means that the 24 words will never be lost. In summary, if the referral list is not compatible, it will be deleted and recreated, this way we guarantee that the user can continue updating the application without fear of losing access to their data, the lost synchronization data will be recovered with the mechanisms that they already have.
  
-#0.6.71+72
+# 0.6.71+72
  
 - Changed the text displayed in the transparency header to be more descriptive.
  
-#0.6.71+71
+# 0.6.71+71
  
 - Fixed errors when changing seed.
 - Changed the name of 'purchases' to 'Staking' in the Catkchi extension
 - The Catkchi transparency screen was added, now you can see a list of wallets where you will find the amounts in cold, hot and to be burned that we have in our power
  - Release of resources when changing the seed or closing the app, now, when necessary, you can release resources on the server to stop synchronizing a previous wallet, this improves performance and avoids synchronization failures.
  
-#0.6.7+70
+# 0.6.7+70
  
 - Correction to database migration from version 55, which is the stable version published in the stores, adjustments were made so that it does not freeze when entering the password and finding incompatible models.
  
-#0.6.7+67
+# 0.6.7+67
  
 - Correction to fingerprint authentication on Android, in some devices fingerprint authentication failed, this was corrected by changing the theme used in the native Android environment.
 - Some synchronization problems with WebSocket were corrected, now the height report is not done by blocks, if 100 addresses are at height 150, those 100 addresses are sent and processed as one, this generates a single update of performance-enhancing display.
 - Fixed a visual lag on the tokens screen, this was because for each token the primary color of the token icon was calculated, now a single color is used for all.
 - Fixed a visual lag that existed on the transactions screen, this was achieved by changing the loop that is responsible for processing incoming transactions, because now thanks to WebSocket synchronization, there is only one means by which new ones are registered coins, just add a listener to new coins and process them in case there are new transactions.
  
-#0.6.3+60
+# 0.6.3+60
  
 - Fixed issues with lag in the UI, changed the way the screen updates, made adjustments to only update the appropriate parts of the screen, and do fewer screen updates when not needed.
 - Was implemented a native BLS library that allows better performance when making derivations, in the future it can also be used to make signatures and calculate hashes, but it remains to be seen if the performance difference is important enough to make these changes
  
-#0.6.1+58
+# 0.6.1+58
  
 - Fingerprint authentication was enabled on Android, previously it had been disabled because it failed on some devices.
  
@@ -112,27 +112,27 @@
  
 - Fixed the way the wallet is synchronized due to the previous method causing failures
  
-#0.5.47
+# 0.5.47
  
 - The address of the sender of the CAT's type transaction was corrected, in the previous version it was not done correctly
 - Fixed the data displayed in outgoing transactions.
  
-#0.5.45
+# 0.5.45
  
 - The address of who sends a CAT's Transaction was corrected, in previous versions a mistaken value was shown
  
-#0.5.44
+# 0.5.44
  
 - Performance improvements when synchronizing addresses.
 - Correction of small errors.
 - Updated the API version, to use a new structure on the server.
 - Updated the libraries to improve aspects of performance and code organization.
  
-#0.5.43
+# 0.5.43
  
 - Fixed a bug that deletes all previously selected tokens if the back button is pressed when the list of tokens has not yet been loaded from the server
  
-#0.5.42
+# 0.5.42
  
 - The possibility of auto filling the password was enabled, this to make use of third-party tools that allow password management
 - Fixed confirmation message displayed when password or pin is set
@@ -142,6 +142,6 @@
  
 - First public beta compiled on iOS
  
-#0.5.40
+# 0.5.40
  
 - First public beta
