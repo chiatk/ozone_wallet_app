@@ -1,4 +1,13 @@
 
+# 0.6.80+91 Release
+
+- Explorador de ofertas: Para hacer aun mas fácil el aceptar una oferta, hemos habilitado una pantalla para buscar las ofertas que necesites, actualmente solo funciona con Dexie, pero se implementaran otras DEX en próximas actualizaciones.
+- Valor de Chia en Dólares: Ahora se muestra en todo momento el valor de chia en Dólares Americanos y a su vez, el sitio de donde es obtenido dicho valor.
+- USDS es sumado al total en Dólares: Para brindar una lectura mas fácil, ahora al total den dólares se le suma el total en USDS que se tenga el usuario, de esta forma, facilitamos la lectura del total equivalente en dólares de sus tokens, proximamente se agregaran los demas tokens.
+- Control manual del formato de los números: Ahora desde la pantalla de configuración, puedes cambiar si deseas ver los números usando el punto o coma decimal.
+- Trading mas fácil: Ahora al seleccionar un token de tu listado principal, te llevara al mercado de dicho token para que puedas comprar o vender a traves de las ofertas descentralizadas de Chia.
+- Correcciones de pequeños bugs y mejoras de rendimiento.
+
 # 0.6.78+84 Release
 
 - Android release
