@@ -1,3 +1,11 @@
+# 0.6.80+91 Release
+
+- Offer Explorer: To make it even easier to accept an offer, we have enabled a screen to search for the offers you need, currently it only works with Dexie, but other DEXes will be implemented in future updates.
+- Value of Chia in Dollars: Now the value of chia in US Dollars is displayed at all times and, in turn, the site from which said value is obtained.
+- USDS is added to the total in Dollars: To provide an easier reading, now the total in USDS that the user has is added to the total of dollars, in this way, we facilitate the reading of the total equivalent in dollars of their tokens, the other tokens will be added soon.
+- Manual control of the format of the numbers: Now from the configuration screen, you can change if you want to see the numbers using the decimal point or comma.
+- Easier trading: Now when you select a token from your main list, it will take you to the market for that token so you can buy or sell through Chia's decentralized offerings.
+- Small bug fixes and performance improvements.
 
 # 0.6.77+81 Hotfix
 
