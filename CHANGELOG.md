@@ -1,3 +1,12 @@
+
+# 0.6.81+96 Hotfix
+
+- Upgrade offers logic for support new offers
+
+# 0.6.81+95 Hotfix
+
+- Fix use fee in offers
+
 # 0.6.80+91 Release
 
 - Offer Explorer: To make it even easier to accept an offer, we have enabled a screen to search for the offers you need, currently it only works with Dexie, but other DEXes will be implemented in future updates.
