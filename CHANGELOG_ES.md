@@ -1,5 +1,13 @@
 
-# 0.6.80+91 Release
+# 0.6.81+96 Hotfix
+
+- Se actualizó la lógica de ofertas para soportar nuevos archivos.
+
+# 0.6.81+95 Hotfix
+
+- Se corrigió el uso de comisión de red en las ofertas.
+
+# 0.6.80+93 Release
 
 - Explorador de ofertas: Para hacer aun mas fácil el aceptar una oferta, hemos habilitado una pantalla para buscar las ofertas que necesites, actualmente solo funciona con Dexie, pero se implementaran otras DEX en próximas actualizaciones.
 - Valor de Chia en Dólares: Ahora se muestra en todo momento el valor de chia en Dólares Americanos y a su vez, el sitio de donde es obtenido dicho valor.
