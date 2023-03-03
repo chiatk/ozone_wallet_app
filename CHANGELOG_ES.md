@@ -1,4 +1,9 @@
 
+# 0.6.82+98 
+
+- Actualización del SDK Flutter para un mejor rendimiento y seguridad.
+- Soporte para las nuevas ofertas de la versión 1.7.0 de Chia Wallet
+
 # 0.6.81+96 Hotfix
 
 - Se actualizó la lógica de ofertas para soportar nuevos archivos.
