@@ -1,4 +1,9 @@
 
+# 0.6.82+98 
+
+- Update of flutter SDK engines.
+- Support for Chia 1.7.0 offers
+
 # 0.6.81+96 Hotfix
 
 - Upgrade offers logic for support new offers
