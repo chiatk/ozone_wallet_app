@@ -20,7 +20,7 @@ Ozone is a Wallet that seeks to provide an easy way to use our keywords in the C
 ## Donations
  
 CHIA:
-xch1u63gjtvqyptalmhh9e5pwkwerf5x58f6phajdnlmqms262nhlnesck3pjq
+xch124zpjz99snkrals6uny6rpux7zk70jgqd69fshrs58jqse5n6k2s2k0g2n
  
 TRON-TRC20:
 TMxKPo5AnfSbJY8CZcTJR7L8h4JtEG2pBp
